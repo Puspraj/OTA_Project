@@ -1,0 +1,80 @@
+1>Answer:-
+
+a>:- I have load data set into python through pandas, in pandas have multiple functions 
+     to read the data. So We used the read_csv because the data set format is in the form
+     of CSV.
+
+b>:- I have performed summary statistics through the describe() methods, which give eight
+     things like count, mean, std, min, 25%, 50%, 75%, and max. Issues is that many 
+     features have a standard deviation that is too high.
+
+
+c>:- I have performed exploratory analysis, but I am not got any collinearities because 
+     I have already dropped those have columns that have more than 40% data is null. So
+     the probability is low to facing any collinearities. I have performed 'regplot' to 
+     see the collinearities.
+
+
+d>:- I have identified the issues in the data set that multiple features have almost
+     whole data is null, another one is more than 20 feature have in this data set 
+     more than 75% data is null. Apart from this, I think I have not encountered 
+     issues with anything else.
+
+e>:- Issues I have found too many null values, to deal with I have performed a drop 
+     function for that feature which has more than 35% data are null. That feature 
+     which has 70% of data is not null to deal with it I have used the 'replace' 
+     method with a mean() function. 
+
+f>:- No there any data privacy and security issues in this dataset. 
+
+
+2>Answer:-
+
+a>:-    click-through rate = features/no. of sample *100
+                           = 26/2380556*100%
+                           = 0.001
+
+       
+
+b>:-    click-through rate(listing_stars) = 1/2382556*100
+                                          = 4.2006993324248620910409164917776e-5 (values too low)
+  
+
+
+
+3>Answer:- 
+
+a>:- I have selected the 'booked' feature from these three possible causes of the outcome.
+     From these three outcomes booking_value features I have already deleted them because 
+     in this feature have more than 90% of data is null. For the remaining 2, we can select
+     any of them so, I have selected the 'booked' feature.
+
+
+b>Answer:-
+
+1>:- We have three output variables for performing the machine learning algorithm clicked,
+     booking_value, and booked. From these three firstly I have dropped the booking_value 
+     in this variable have more than 90% of data are null. Now we are free to use anyone 
+     from the remaining 2, variables so, I have selected booked column.
+
+
+2>:- I have used 27 columns from the 57 columns, the remaining 30 columns I have dropped 
+     because in these columns have more than 75% of data are null. These 27 columns are 
+     not highly colinear.
+
+3>:- Pre-processing I have done in this problem is, describe, is null, drop, replace, 
+     resample and check colinearities method. I have used it because this data set have 
+     many null values data set imbalanced so, to deal with it I have used this method. If
+     we have not use these techniques our model performance not well.
+
+4>:- I have used the classification machine learning technique to perform the machine 
+     learning operation because target columns have data categorical data.
+
+5>:- Evaluation metrics I have used to optimize the machine learning model is accuracy_score,
+     confusion_matrix, and classification_report. Classification reports give precision, recall,
+     and f1-score. I have used this evaluation matrix because I have used the classification model.
+
+6>:- I have used this evaluation matrix because models are classification model and not any 
+     implications in this final matric values. 
+
+7>:- My approach for a deal with the complex model is that do all pre-processing, transforming. 
